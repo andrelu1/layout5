@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=no"
+    />
+    <meta
+      name="description"
+      content="Semantic-UI-Forest, collection of design, themes and templates for Semantic-UI."
+    />
+    <meta name="keywords" content="Semantic-UI, Theme, Design, Template" />
+    <meta name="author" content="PPType" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Homepage Template for Semantic-UI</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+      type="text/css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.js"></script>
+    <script>
+      $(document).ready(function() {
+
+        $(".masthead").visibility({
+          once: false,
+          onBottomPassed: function() {
+            $(".fixed.menu").transition("fade in");
+          },
+          onBottomPassedReverse: function() {
+            $(".fixed.menu").transition("fade out");
+          }
+        });
+
+
+        $(".ui.sidebar").sidebar("attach events", ".toc.item");
+      });
+    </script>
+
+    <style type="text/css">
+      .hidden.menu {
+        display: none;
+      }
+
+      .masthead.segment {
+        min-height: 700px;
+        padding: 1em 0em;
+      }
+
+      .masthead .logo.item img {
+        margin-right: 1em;
+      }
+
+      .masthead .ui.menu .ui.button {
+        margin-left: 0.5em;
+      }
+
+      .masthead h1.ui.header {
+        margin-top: 1em;
+        margin-bottom: 0em;
+        font-size: 2em;
+        font-weight: normal;
+      }
+
+      .masthead h2 {
+        font-size: 1.7em;
+        font-weight: normal;
+      }
+
+      .ui.vertical.stripe {
+        padding: 8em 0em;
+      }
+
+      .ui.vertical.stripe h3 {
+        font-size: 2em;
+      }
+
+      .ui.vertical.stripe .button+h3,
+      .ui.vertical.stripe p+h3 {
+        margin-top: 3em;
+      }
+
+      .ui.vertical.stripe .floated.image {
+        clear: both;
+      }
+
+      .ui.vertical.stripe p {
+        font-size: 1.33em;
+      }
+
+      .ui.vertical.stripe .horizontal.divider {
+        margin: 3em 0em;
+      }
+
+      .quote.stripe.segment {
+        padding: 0em;
+      }
+
+      .quote.stripe.segment .grid .column {
+        padding-top: 5em;
+        padding-bottom: 5em;
+      }
+
+      .footer.segment {
+        padding: 5em 0em;
+      }
+
+      .secondary.pointing.menu .toc.item {
+        display: none;
+      }
+
+      @media only screen and (max-width: 700px) {
+        .ui.fixed.menu {
+          display: none !important;
+        }
+
+        .secondary.pointing.menu .item,
+        .secondary.pointing.menu .menu {
+          display: none;
+        }
+
+        .secondary.pointing.menu .toc.item {
+          display: block;
+        }
+
+        .masthead.segment {
+          min-height: 350px;
+        }
+
+        .masthead h1.ui.header {
+          font-size: 2em;
+          margin-top: 1.5em;
+        }
+
+        .masthead h2 {
+          margin-top: 0.5em;
+          font-size: 1.5em;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- Following Menu -->
+    <div class="ui large inverted top fixed hidden menu">
+      <div class="ui container">
+        <a class="active item">Home</a>
+        <a class="item">Institucional</a>
+        <a class="item">Cursos</a>
+        <a class="item">Secretaria</a>
+        <a class="item">Calendario</a>
+        <div class="right menu">
+          <div class="item">
+            <a class="ui inverted button">Login</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sidebar Menu -->
+    <div class="ui vertical inverted sidebar menu">
+      <a class="active item">Home</a>
+      <a class="item">Institucional</a>
+      <a class="item">Cursos</a>
+      <a class="item">Secretaria</a>
+      <a class="item">Calemderio</a>
+    </div>
+
+
+    <!-- Page Contents -->
+    <div class="pusher">
+      <div class="ui vertical masthead center aligned segment">
+
+        <div class="ui container">
+          <div class="ui large secondary pointing menu">
+            <a class="toc item">
+              <i class="sidebar icon"></i>
+            </a>
+            <a class="active item">Home</a>
+            <a class="item">Institucional</a>
+            <a class="item">Cursos</a>
+            <a class="item">Secretaria</a>
+            <a class="item">Calendario</a>
+            <div class="right item">
+              <img class="ui top aligned small image" src="https://www.fatecpg.edu.br/img/logoFatec.png">
+            </div>
+          </div>
+        </div>
+        <!-- <div class="ui text container"> -->
+
+        <img class="ui fluid image" src="https://images2.imgbox.com/05/9e/e0BRxl8y_o.jpg">
+
+        <!-- </div> -->
+
+      </div>
+
+      <div class="ui vertical stripe segment">
+        <div class="ui text container">
+          <h3 class="ui header">Segundo ComexIN</h3>
+          <p>Blablablablabla</p>
+          <a class="ui large red button">Leia Mais</a>
+          <h4 class="ui horizontal header divider">
+            <hr>
+          </h4>
+          <h3 class="ui header">Inscrição Para o Vestibular da Fatec</h3>
+          <p>Blablablablabla</p>
+          <a class="ui large red button">Leia Mais</a><br><br><br><br>
+          <div class="row">
+            <div class="center aligned column">
+              <center><a class="ui huge red button">Outras Noticias</a></center>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="ui vertical stripe quote segment">
+        <div class="ui equal width stackable internally celled grid">
+          <div class="center aligned row">
+            <div class="column">
+              <h3>Aviso Um</h3>
+              <p>
+                <img src="https://iconape.com/wp-content/files/ya/10843/png/iconfinder_11_avatar_2754576.png" class="ui avatar image"> <b>Secretaria</b> Direcao
+              </p>
+            </div>
+            <div class="column">
+              <h3>Aviso Dois</h3>
+              <p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Avatar_Head.svg/342px-Avatar_Head.svg.png" class="ui avatar image"> <b>Coordenador</b> Chief Fun Officer Acme Toys
+              </p>
+            </div>
+            <div class="column">
+              <h3>Aviso Três</h3>
+              <p>
+                <img src="https://icon-library.com/images/avatar-icon-free/avatar-icon-free-15.jpg" class="ui avatar image"> <b>Professor</b> Blabla
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ui vertical stripe segment">
+        <div class="ui middle aligned stackable grid container">
+          <div class="row">
+            <div class="eight wide right floated column">
+              <img src="https://img.elo7.com.br/product/main/307E4E5/placa-decorativa-mdf-et-paul-monstro-do-lago.jpg" class="ui large bordered rounded image">
+            </div>
+            <div class="six wide column">
+              <h3 class="ui top header">Nome do Aluno</h3>
+              <h5 class="ui header"> Curso/Formado-Data</h5>
+              <p>Blablablabla</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ui vertical stripe quote segment">
+        <div class="ui equal width stackable internally celled grid">
+          <div class="center aligned row">
+            <div class="column">
+              <h3>Analises de Sistemas</h3>
+              <p>
+                <div class="ui special cards">
+                  <div class="card">
+                    <div class="blurring dimmable image">
+                      <div class="ui dimmer">
+                        <div class="content">
+                          <div class="center">
+                            <div class="ui inverted button">Mais Informações</div>
+                          </div>
+                        </div>
+                      </div>
+  <img src="https://www.oficinadanet.com.br/imagens/post/24969/750xNxkernel-panic-3.10.0-229.4.2.el7.png.pagespeed.ic.fc28ad1e5c.png">
+                    </div>
+                    <div class="content">
+                    <a class="header">Coordenador</a><p>Nome</p>
+                     <div class="meta">
+                     <p>Breve descrição</p>
+                    <span class="date">Duração 3 anos</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </p>
+            </div>
+            <div class="column">
+              <h3>Comercio Exterior</h3>
+              <p>
+                <div class="ui special cards">
+                  <div class="card">
+                    <div class="blurring dimmable image">
+                      <div class="ui dimmer">
+                        <div class="content">
+                          <div class="center">
+                            <div class="ui inverted button">Mais Informações</div>
+                          </div>
+                        </div>
+                      </div>
+  <img src="http://www.prefeituradeatibaia.com.br/wp-content/uploads/2018/11/Comercio-Exterior-Ilustra%C3%A7%C3%A3oi.jpg">
+                    </div>
+                    <div class="content">
+                    <a class="header">Coordenador</a><p>Nome</p>
+                     <div class="meta">
+                     <p>Breve descrição</p>
+                    <span class="date">Duração 3 anos</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </p>
+            </div>
+            <div class="column">
+              <h3>Gestão Empresarial</h3>
+              <p>
+                <div class="ui special cards">
+                  <div class="card">
+                    <div class="blurring dimmable image">
+                      <div class="ui dimmer">
+                        <div class="content">
+                          <div class="center">
+                            <div class="ui inverted button">Mais Informações</div>
+                          </div>
+                        </div>
+                      </div>
+  <img src="https://alumnicoppead.com.br/wp-content/uploads/2021/08/FGE-IMAGEM-SITE.png">
+                    </div>
+                    <div class="content">
+                    <a class="header">Coordenador</a><p>Nome</p>
+                     <div class="meta">
+                     <p>Breve descrição</p>
+                    <span class="date">Duração 3 anos</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             </p>
+            </div>
+            <div class="column">
+              <h3>Processos Quimicos</h3>
+              <p>
+                  <div class="ui special cards">
+                    <div class="card">
+                      <div class="blurring dimmable image">
+                        <div class="ui dimmer">
+                          <div class="content">
+                            <div class="center">
+                              <div class="ui inverted button">Mais Informações</div>
+                            </div>
+                          </div>
+                        </div>
+    <img src="https://portal.ifrn.edu.br/campus/novacruz/noticias/inscricoes-abertas-para-o-curso-superior-processos-quimicos-via-enem-1/image_preview">
+                      </div>
+    <div class="content">
+      <a class="header">Coordenador</a><p>Nome</p>
+      <div class="meta">
+        <p>Breve descrição</p>
+        <span class="date">Duração 3 anos</span>
+      </div>
+    </div>
+  </div>
+</p>
+</div>
+</div>
+</div>
+</div>
+
+
+      <div class="ui inverted vertical footer segment">
+        <div class="ui container">
+          <div class="ui stackable inverted divided equal height stackable grid">
+            <div class="three wide column">
+              <h4 class="ui inverted header">Endereço</h4>
+              <div class="ui inverted link list">
+                <p> Praça 19 de janeiro, 144 - Praia Grande - São Paulo - CEP: 11700-100</p>
+                <h4 class="ui inverted header">Telefone</h4>
+                <p>Tel: (13) 3591-1303 / (13) 3591-6968</p>
+              </div>
+            </div>
+            <div class="three wide column">
+              <h4 class="ui inverted header">Links</h4>
+              <div class="ui inverted link list">
+                 <a href="#" class="item">?</a>
+                 <a href="#" class="item">Centro Paula Sousa</a>
+                 <a href="#" class="item">SIGA</a>
+                 <a href="#" class="item">NASA</a>
+              </div>
+            </div>
+            <div class="seven wide column">
+              <div class="ui massive images">
+                <img class="ui image" src="http://etecmontemor.com.br/wp-content/uploads/2021/07/cps-gov_branco_transparente.png" alt="Fatec Praia Grande">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<script>
+$('.special.cards .image').dimmer({
+  on: 'hover'
+});
+</script>
+  </body>
+
+  </html>
